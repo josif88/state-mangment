@@ -17,12 +17,13 @@ export default function StudentModal() {
     setGender,
     data,
     setData,
-    
+    setSearchResult
   } = useStudentStore();
 
   const addStudent = () => {
     setKey(Date.now());
     setData([...data, { key, age, name, address, gender }]);
+    setSearchResult([]);
     //setKey(null);
     setName(null);
     setAge(null);
