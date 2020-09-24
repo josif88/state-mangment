@@ -2,7 +2,7 @@ import { Button, Table, Tag } from "antd";
 import { useStudentStore } from "../store/studentStore";
 
 export default function StudentTable() {
-  const { data, setData, searchResult } = useStudentStore();
+  const { data, setData, searchResult, setSearchResult } = useStudentStore();
 
   const columns = [
     {
@@ -41,6 +41,7 @@ export default function StudentTable() {
           type="primary"
           onClick={() => {
             setData(data.filter((el) => el.key !== value));
+            setSearchResult([]);
           }}
         >
           Delete
