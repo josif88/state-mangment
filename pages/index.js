@@ -1,5 +1,5 @@
 import { Button, Input, Table, Row, Col, Select } from "antd";
-import StudentControls from "../components/StudentControls";
+import StudentControls from "../components/studentControls";
 import StudentModal from "../components/studentModal";
 import StudentTable from "../components/studentTable";
 
